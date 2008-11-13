@@ -1,0 +1,16 @@
+Format-Specification: http://wiki.debian.org/Proposals/CopyrightFormat
+Upstream-Name: gnome-keyring-query
+Upstream-Maintainer: "Koster"
+Upstream-Source:
+    http://gentoo-wiki.info/HOWTO_Use_gnome-keyring_to_store_SSH_passphrases
+
+Files: gnome-keyring-query.c
+License: PD
+ The source code is provided in the PUBLIC DOMAIN, AS-IS, without warranty.
+
+Files: debian/*
+Copyright: Copyright 2007-2008, Richard Laager <rlaager@wiktel.com>
+License: GPL-2+
+ On Debian systems the full text of the GNU General Public License can be found
+ in the `/usr/share/common-licenses/GPL' file.
+

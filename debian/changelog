@@ -1,0 +1,5 @@
+gnome-keyring-query (0.0.0.20070709-3) unstable; urgency=low
+
+  * Initial release (Closes: #505633)
+
+ -- Richard Laager <rlaager@wiktel.com>  Thu, 13 Nov 2008 16:16:52 -0600

@@ -1,0 +1,50 @@
+\Ri.\" Copyright (c) 2008, Richard Laager <rlaager@wiktel.com>
+.\"
+.\" This is free documentation; you can redistribute it and/or
+.\" modify it under the terms of the GNU General Public License as
+.\" published by the Free Software Foundation; either version 2 of
+.\" the License, or (at your option) any later version.
+.\"
+.\" The GNU General Public License's references to "object code"
+.\" and "executables" are to be interpreted as the output of any
+.\" document formatting or typesetting system, including
+.\" intermediate and printed output.
+.\"
+.\" This manual is distributed in the hope that it will be useful,
+.\" but WITHOUT ANY WARRANTY; without even the implied warranty of
+.\" MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+.\" GNU General Public License for more details.
+.\"
+.\" You should have received a copy of the GNU General Public
+.\" License along with this manual; if not, write to the Free
+.\" Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+.\" Boston, MA  02111-1301  USA.
+.TH gnome-keyring-query 1 "November 13, 2008"
+.SH NAME
+\fBgnome-keyring-query\fP \- Command\-line utility for querying GNOME Keyring
+.SH SYNOPSIS
+.TP 5
+\fBgnome-keyring-query\fR \fImode\fR \fIname\fR
+
+.SH DESCRIPTION
+.PP
+\fBgnome-keyring-query\fR is a small, simple command-line utility for setting
+and getting passwords from GNOME Keyring.  It is useful in shell scripts.
+
+\fBgnome-keyring-query\fR may be used as follows:
+.RS
+.br
+.BI "gnome-keyring-query " "mode name"
+.RE
+.PP
+If \fImode\fR is get, the password identified by the \fIname\fR key is returned
+on stdout.
+.PP
+If \fImode\fR is set, the password read from stdin is saved to the keyring
+under the \fIname\fR key.
+
+.SH AUTHOR
+\fBgnome-keyring-query\fR was written by "Koster".
+.PP
+This manual page was written by Richard Laager <rlaager@wiktel.com>,
+for the Debian project (but may be used by others).
