@@ -1,3 +1,9 @@
+gnome-keyring-query (0.0.0.20070709-4) jaunty; urgency=low
+
+  * Build for Jaunty
+
+ -- Richard Laager <rlaager@wiktel.com>  Sat, 18 Apr 2009 23:57:45 -0500
+
 gnome-keyring-query (0.0.0.20070709-3) unstable; urgency=low
 
   * Initial release (Closes: #505633)
