@@ -1,3 +1,11 @@
+gnome-keyring-query (0.0.0.20070709-6) natty; urgency=low
+
+  * Build for Natty
+  * Switch to a debhelper 7 minimal rules file
+  * Update Standards-Version to 3.8.4 (no changes)
+
+ -- Richard Laager <rlaager@wiktel.com>  Mon, 04 Apr 2011 00:03:30 -0500
+
 gnome-keyring-query (0.0.0.20070709-5) lucid; urgency=low
 
   * Build for Lucid

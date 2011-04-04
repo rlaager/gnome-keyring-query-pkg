@@ -2,8 +2,8 @@ Source: gnome-keyring-query
 Section: gnome
 Priority: optional
 Maintainer: Richard Laager <rlaager@wiktel.com>
-Build-Depends: debhelper (>= 7), libglib2.0-dev, libgnome-keyring-dev
-Standards-Version: 3.8.0
+Build-Depends: debhelper (>= 7.0.50~), libglib2.0-dev, libgnome-keyring-dev
+Standards-Version: 3.8.4
 
 Package: gnome-keyring-query
 Architecture: any

@@ -1,13 +1,3 @@
-/*
- * gnome-keyring-query
- *
- * The source code is provided in the PUBLIC DOMAIN, AS-IS, without warranty.
- *
- * This code was downloaded from:
- * http://gentoo-wiki.info/HOWTO_Use_gnome-keyring_to_store_SSH_passphrases
- *
- */
-
 #include <stdlib.h>
 #include <stdio.h>
 
