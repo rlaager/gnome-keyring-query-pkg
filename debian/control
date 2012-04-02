@@ -3,7 +3,7 @@ Section: gnome
 Priority: optional
 Maintainer: Richard Laager <rlaager@wiktel.com>
 Build-Depends: debhelper (>= 9), libglib2.0-dev, libgnome-keyring-dev
-Standards-Version: 3.8.4
+Standards-Version: 3.9.3
 
 Package: gnome-keyring-query
 Architecture: any
