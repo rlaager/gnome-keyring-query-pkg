@@ -2,11 +2,21 @@
 %:
 	dh $@
 
+export DEB_CFLAGS_MAINT_APPEND = \
+	$(shell pkg-config --cflags gnome-keyring-1 glib-2.0)
+export DEB_LDFLAGS_MAINT_APPEND = \
+	$(shell pkg-config --libs gnome-keyring-1 glib-2.0)
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/buildflags.mk
+
 override_dh_auto_clean:
 	$(RM) gnome-keyring-query
 
 override_dh_auto_build:
-	$(CC) `pkg-config --cflags --libs gnome-keyring-1 glib-2.0` -o gnome-keyring-query gnome-keyring-query.c
+	$(CC) -o gnome-keyring-query gnome-keyring-query.c \
+		$(CPPFLAGS) $(CFLAGS) $(LDFLAGS)
 
 override_dh_auto_install:
 	install -d "$(CURDIR)/debian/gnome-keyring-query/usr/bin"
