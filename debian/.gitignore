@@ -1,0 +1,6 @@
+*.debhelper
+*.debhelper.log
+*.substvars
+files
+tmp
+gnome-keyring-query
