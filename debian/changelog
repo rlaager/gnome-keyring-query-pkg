@@ -1,3 +1,13 @@
+gnome-keyring-query (0.0.0.20070709-7) precise; urgency=low
+
+  * Update to the latest DEP-5 copyright format
+  * Raise the debhelper compatibility level (no changes)
+  * Update the Standards-Version (no changes needed)
+  * Use dpkg-buildflags
+  * Convert to using git-buildpackage
+
+ -- Richard Laager <rlaager@wiktel.com>  Mon, 02 Apr 2012 14:24:30 -0500
+
 gnome-keyring-query (0.0.0.20070709-6) natty; urgency=low
 
   * Build for Natty
