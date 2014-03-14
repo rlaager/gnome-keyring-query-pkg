@@ -1,3 +1,9 @@
+gnome-keyring-query (0.0.0.20070709-9) trusty; urgency=low
+
+  * Update the Standards-Version to 3.9.5 (no changes needed)
+
+ -- Richard Laager <rlaager@wiktel.com>  Fri, 14 Mar 2014 03:51:17 -0500
+
 gnome-keyring-query (0.0.0.20070709-8) precise; urgency=low
 
   * Add the man page GPL interpretation to debian/copyright
