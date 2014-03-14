@@ -3,7 +3,7 @@ Section: gnome
 Priority: optional
 Maintainer: Richard Laager <rlaager@wiktel.com>
 Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.1~), libglib2.0-dev, libgnome-keyring-dev
-Standards-Version: 3.9.3
+Standards-Version: 3.9.5
 Vcs-Browser: https://github.com/rlaager/gnome-keyring-query-pkg
 Vcs-Git: git://github.com/rlaager/gnome-keyring-query-pkg.git
 
