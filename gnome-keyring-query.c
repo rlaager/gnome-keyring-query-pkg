@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 #include <glib.h>
 #include "gnome-keyring.h"
@@ -29,6 +30,8 @@ void usage()
 
 int main(int argc, char * argv[])
 {
+    int i;
+
     enum
     {
         MODE_GET, MODE_SET
@@ -71,6 +74,11 @@ int main(int argc, char * argv[])
             password = g_malloc(MAX_PASSWORD_LENGTH);
             *password = '\0';
             fgets(password, MAX_PASSWORD_LENGTH, stdin);
+            /* remove possible '\n' at the end */
+            i = strlen(password);
+            if (password[i-1] == '\n') {
+                    password[i-1] = '\0';
+            }
             
             if (!set_password(name, password))
             {
